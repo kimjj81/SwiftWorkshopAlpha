@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='raw'>
+    <pages>
+        <page name='1_Basics_variable'/>
+        <page name='2_Basic_operation'/>
+        <page name='3_Collection_type'/>
+        <page name='4_Control_flow'/>
+        <page name='5_Function_Closure'/>
+        <page name='6_Higher_order_functions'/>
+        <page name='7_Enumerations'/>
+        <page name='8_Class_Structure'/>
+        <page name='9_Properties'/>
+        <page name='Error Handling'/>
+    </pages>
+</playground>
