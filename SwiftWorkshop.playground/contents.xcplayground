@@ -10,6 +10,12 @@
         <page name='7_Enumerations'/>
         <page name='8_Class_Structure'/>
         <page name='9_Properties'/>
+        <page name='10_Methods'/>
+        <page name='11_Subscripts'/>
+        <page name='12_Inheritance'/>
+        <page name='13_Initialization'/>
+        <page name='14_Deinitialization'/>
+        <page name='15_ARC'/>
         <page name='Error Handling'/>
     </pages>
 </playground>

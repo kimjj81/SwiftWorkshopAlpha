@@ -32,7 +32,7 @@ func minmax(_ numbers:[Int]) -> (min:Int,max:Int) {
 
 print(minmax([0,3,2,1,4,0129,123,-1,23,48]))
 
-// 여러 파라미터
+// 가변 파라미터
 func sumFunc(_ numbers:Int...) -> Int {
     var result = 0
     for i in numbers {
@@ -49,7 +49,7 @@ let funcCanBeVar:(Int...) -> Int = sumFunc
 print(funcCanBeVar(1,2,3,4,5))
 
 //: in-out 파라미터
-// 여러 파라미터는 in-out 형으로 못씀. in-out 파라미터는 기본값 지정 불가
+// 가변 파라미터는 in-out 형으로 못씀. in-out 파라미터는 기본값 지정 불가
 func swapTwoInts(_ a: inout Int, _ b: inout Int) {
     let temporaryA = a
     a = b
@@ -172,7 +172,7 @@ print(instance.x)
 // Prints "100"
 
 //: Autoclosure
-// { } 로 감싼 구문은 클로저로 만들어주는 것. 아래처럼 단순한 형태도 있지만, 여러 파라미터를 쓸 수도 있다. 일반적으로 즉시 실행되지 않기 때문에 좋다.
+// { } 로 감싼 구문은 클로저로 만들어주는 것. 아래처럼 단순한 형태도 있지만, 가변 파라미터를 쓸 수도 있다. 일반적으로 즉시 실행되지 않기 때문에 좋다.
 let autoclosureSample:() -> Bool = {
     print("autoclosure called")
     return true
