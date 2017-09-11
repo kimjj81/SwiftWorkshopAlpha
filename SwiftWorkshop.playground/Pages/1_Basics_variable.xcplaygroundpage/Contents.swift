@@ -1,9 +1,13 @@
 //: 상수와 변수  = let vs var
+
 //: mutable vs immutable?
+
 // 변수명에 유니코드 사용 가능
 let π = 3.14159
 let 你好 = "你好世界"
 let 🐶🐮 = "dogcow"
+
+
 //let multiline = """
 //여러줄은 이렇게 쓸 수 있습니다.
 //-_-
@@ -16,7 +20,7 @@ let unicode = "\u{1F496}"
 // string 과 character 에 대해서는 위 링크의 문서를 더 참조하세요.
 
 //: 기본함수 print()
-print ("π = \(π)")
+print ("π = \(unicode)")
 
 //: Type
 // 정수형 Int, Int8, Int16, Int32, Int64 (Unsigned 는 지양. Type Safety, Type Inference 참조)
@@ -56,9 +60,16 @@ typealias AudioSample = UInt16
 
 // 문자열 String , Substring, Character, CharacterSet
 // 집합형 Array, Set, and Dictionary
+let newArray = [1,2,3,5]
+let newSet = Set.init(arrayLiteral: 1,3,5,6,8,1,1,1,1,5,6,1,10)
+var newDic = ["key":"value","name":"kim","laptop":"macbook"]
+print(newDic)
+newDic["key"] = "newValue"
+print(newDic)
 
 //: Tuple
 let http404Error = (404, "Not Found")
+
 // 분리
 let (statusCode, statusMessage) = http404Error
 print("status code : \(statusCode) , message : \(statusMessage)")
@@ -86,5 +97,3 @@ let cat = "🐱"; print(cat)
 // nil 은 값이 존재 하지 않는다는 의미. 모든 타입에 가능. Objective-C의 nil 은 레퍼런스 타입에만 가능
 var balance:Any? = nil
 balance = 100_000
-
-

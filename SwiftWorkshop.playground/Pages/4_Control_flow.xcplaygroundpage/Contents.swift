@@ -61,9 +61,10 @@ if let v = optionalValue { // 이 블록에서 v 라는 변수 선언 됨
     print("값이 없어부러")
 }
 
-//: Switch 
 
-let switchDescription:UIImage = #imageLiteral(resourceName: "swift_switch.jpg")
+//: ### Switch 구문.
+//: ![Switch](swift_switch.jpg "스위치 구문")
+
 // switch - fallthrough
 
 var age = 1

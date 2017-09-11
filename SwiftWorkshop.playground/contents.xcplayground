@@ -16,6 +16,15 @@
         <page name='13_Initialization'/>
         <page name='14_Deinitialization'/>
         <page name='15_ARC'/>
-        <page name='Error Handling'/>
+        <page name='16_Recycled_reference'/>
+        <page name='17_Optional_Chaining'/>
+        <page name='18_Error_Handling'/>
+        <page name='19_Type_Casting'/>
+        <page name='20_Nested_Types'/>
+        <page name='21_Extensions'/>
+        <page name='22_Protocols'/>
+        <page name='23_Generics'/>
+        <page name='24_Access_Control'/>
+        <page name='25_Advanced_Operators'/>
     </pages>
 </playground>

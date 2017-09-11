@@ -50,7 +50,8 @@ struct Color {
 // 일반적으로 지정 생성자는 1개 정도이다.(강제사항은 아님)
 // 또한 편의 생성자는 파라미터가 없거나 적은 것이다.
 
-var initializer_delegattion = UIImage.init(named: "initializer_delegation_jpg.jpg")
+//: 생성자 호출 구조.
+//: ![생성자 호출 구조 ](initializer_delegation_jpg.jpg "생성자 호출 구조")
 
 //: 생성자 규칙
 //

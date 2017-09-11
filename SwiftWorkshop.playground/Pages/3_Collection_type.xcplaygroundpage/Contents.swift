@@ -3,7 +3,8 @@
 import Foundation
 import UIKit
 
-let image:UIImage = #imageLiteral(resourceName: "The_Swift_Programming_Language__Swift_4___Collection_Types.jpg")
+//: 집합 타입
+//: ![집합 타입](Collection_Types.jpg "집합 타입")
 
 // Array - 순차적인 집합. 값 중복 가능.
 // Set - 순서가 없는 집합. 값 중복 없음.
