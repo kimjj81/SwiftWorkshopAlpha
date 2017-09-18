@@ -28,7 +28,7 @@ print(smallBicyle.currentSpeed)
 
 //: Override
 // 이미 정해진 기능을 subclass 에서 바꾸는 것. Swift 에서는 override 키워드를 강제하고 있다.
-// super 키워드를 통해 메소드, 프로퍼티, subscript 접근 가능.
+// super 키워드를 통해 메소드, 프로퍼티, 첨자 연산자 접근 가능.
 
 class Car : Vehicle {
     

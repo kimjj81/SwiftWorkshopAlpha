@@ -11,7 +11,7 @@ let 🐶🐮 = "dogcow"
 //let multiline = """
 //여러줄은 이렇게 쓸 수 있습니다.
 //-_-
-// 하지만 swift 3에선 안되지롱~ 4 부터 됩니다여러분~
+// 하지만 swift 3에선 안되지요~ 4 부터 됩니다여러분~
 // 줄바꿈 하려면 \ 백슬래시 하나 넣으면 됩니다.
 // 들여쓰기 기능도 제공하는데 그건 https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/StringsAndCharacters.html#//apple_ref/doc/uid/TP40014097-CH7-ID285 을 참조하세요.
 //"""

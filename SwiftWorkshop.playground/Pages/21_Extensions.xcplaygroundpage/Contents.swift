@@ -10,7 +10,7 @@ import Foundation
  * 계산형 타입 프로퍼티와 인스턴스 프로퍼티 추가 가능
  * 타입 메소드와 인스턴스 메소드 정의 가능
  * 새로운 생성자 추가
- * Subscript 선언
+ * Subscript(첨자 연산자) 선언
  * 새로운 내포 타입을 선언하고 사용하기
  * 기존 타입의 프로토콜 구현
 */
@@ -100,7 +100,7 @@ var someInt = 3
 someInt.square()
 // someInt is now 9
 
-//: #### Subscripts
+//: #### Subscripts - 첨자 연산자
 extension Int {
     subscript(digitIndex: Int) -> Int {
         var decimalBase = 1

@@ -55,7 +55,7 @@ simpleDictionary = ["key":"value","name":"김정진"]
 
 // 변경
 let aValue = simpleDictionary["key"] = "golden key"
-print("aValue = \(aValue)") //<- subscripting 은 반환값 없음
+print("aValue = \(aValue)") //<- 첨자연산자는 반환값 없음
 let oldValue = simpleDictionary.updateValue("갑부", forKey: "name") // updateValue는 이전값 반환
 print("old value = \(oldValue)")
 print(simpleDictionary)

@@ -5,7 +5,7 @@
 //: 공통점
 // 값을 저장하기 위해 프로퍼티 사용
 // 메소드 = 소속된 함수
-// subscripting : ex) array[1] or dictionary["key"]
+// 첨자 연산자 : ex) array[1] or dictionary["key"]
 // 생성자 존재
 // 확장 가능성
 // protocol 구현

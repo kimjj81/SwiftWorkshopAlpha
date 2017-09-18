@@ -4,7 +4,7 @@ import Foundation
 
 //: ### Optional Chaining, 옵셔널 체이닝
 
-// Optional Chaining 이란 nil 값일 수 있는 옵셔널 타입의 인스턴스의 프로퍼티, 메소드, 순서(Subscript) 동작을 연속해서 호출하는 것이다. 예) john?.apartment?.refrigerator?
+// Optional Chaining 이란 nil 값일 수 있는 옵셔널 타입의 인스턴스의 프로퍼티, 메소드, 첨자 연산자를 연속해서 호출하는 것이다. 예) john?.apartment?.refrigerator?
 // 만약 인스턴스가 nil 이거나, 연속된 호출 중에 nil 이 있으면 에러 없이 nil 을 반환한다.
 
 //: ### Force Unwrapping 대신 사용하는 옵셔널 체이닝
@@ -106,7 +106,7 @@ if let firstRoomName = hilton.hotel?[0].name {
 }
 
 
-// 다른 Subscripting 예제
+// 다른 첨자 연산자(Subscripting) 예제
 var testScores = ["Dave": [86, 82, 84], "Bev": [79, 94, 81]]
 testScores["Dave"]?[0] = 91
 testScores["Bev"]?[0] += 1
