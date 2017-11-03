@@ -300,28 +300,28 @@ print([1260.0, 1200.0, 98.6, 37.0].average())
 //: #### 연관 타입에 제너릭 where 절 사용하기 (Swift 4.0 부터 지원)
 
 // 문법 : associatedtype Item  where ....
-//protocol OtherContainer {
-//    associatedtype Item where Item == Int
-//    mutating func append(_ item: Item)
-//    var count: Int { get }
-//    subscript(i: Int) -> Item { get }
-//    
-//    associatedtype Iterator: IteratorProtocol where Iterator.Element == Item
-//    func makeIterator() -> Iterator
-//}
+protocol OtherContainer {
+    associatedtype Item where Item == Int
+    mutating func append(_ item: Item)
+    var count: Int { get }
+    subscript(i: Int) -> Item { get }
+    
+    associatedtype Iterator: IteratorProtocol where Iterator.Element == Item
+    func makeIterator() -> Iterator
+}
 
 //: #### 제너릭 Subscripts (Swift 4.0 부터)
 
-//extension Container {
-//    subscript<Indices: Sequence>(indices: Indices) -> [Item]
-//    where Indices.Iterator.Element == Int {
-//      var result = [Item]()
-//      for index in indices {
-//          result.append(self[index])
-//      }
-//      return result
-//    }
-//}
+extension Container {
+    subscript<Indices: Sequence>(indices: Indices) -> [Item]
+    where Indices.Iterator.Element == Int {
+      var result = [Item]()
+      for index in indices {
+          result.append(self[index])
+      }
+      return result
+    }
+}
 
 // 위 Container 의 Extension 은 특정 인덱스들을 포함한 아이템들을 반환합니다.
 /* 제너릭 Indices 형 파라미터인 indices 는 Sequence 프로토콜을 채용(conform) 하고 있음을 나타냅니다. <Indices : Sequence> 부분

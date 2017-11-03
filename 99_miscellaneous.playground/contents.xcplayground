@@ -3,6 +3,8 @@
     <pages>
         <page name='Examples'/>
         <page name='keyboard_symbol'/>
-        <page name='잡다한용어'/>
+        <page name='잡다한용어'/>
+        <page name='Objective-C_Compatibility'/>
+        <page name='equatable'/>
     </pages>
 </playground>

@@ -374,6 +374,9 @@ let seattle = City(name: "Seattle", latitude: 47.6, longitude: -122.3)
 beginConcert(in: seattle)
 */
 
+// 이와관련된 아티클을 하나 발견해서 추가합니다.
+// https://academy.realm.io/posts/try-swift-nyc-2017-james-dempsey-flexible-view-controller-interfaces-swift-4/
+
 //: ### 프로토콜 채택 여부 확인하기
 /*:
  오퍼레이터
