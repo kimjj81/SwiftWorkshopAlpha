@@ -57,7 +57,7 @@ simpleDictionary = ["key":"value","name":"김정진"]
 let aValue = simpleDictionary["key"] = "golden key"
 print("aValue = \(aValue)") //<- 첨자연산자는 반환값 없음
 let oldValue = simpleDictionary.updateValue("갑부", forKey: "name") // updateValue는 이전값 반환
-print("old value = \(oldValue)")
+print("old value = \(String(describing: oldValue))")
 print(simpleDictionary)
 
 // 반복
@@ -77,7 +77,7 @@ for key in simpleDictionary.keys {
 // Set의 값들은 Hashable 을 구현해야 한다. Hashable은 hashValue 와 Equatable 의 == 을 구현하는데, 이것을 통해 같은 값인지 판별한다.
 
 var letters = Set<Character>.init()
-"abcdefgabc 012d82381273801".characters.map{ $0 }.forEach{ letters.insert($0) }
+"abcdefgabc 012d82381273801".map{ $0 }.forEach{ letters.insert($0) }
 print(letters)
 letters = []
 print(letters.isEmpty)
