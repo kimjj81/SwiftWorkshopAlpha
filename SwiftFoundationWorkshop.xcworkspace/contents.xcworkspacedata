@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:/Users/kimjeongjin/Repository/SwiftWorkshopAlpha/Swift4.x.playground">
+   </FileRef>
+   <FileRef
       location = "group:SwiftWorkshop.playground">
    </FileRef>
    <FileRef
