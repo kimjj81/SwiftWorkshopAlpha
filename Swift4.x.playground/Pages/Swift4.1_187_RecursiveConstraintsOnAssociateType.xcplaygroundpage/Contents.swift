@@ -59,4 +59,6 @@ protocol Sequence {
 //    // ...
 //}
 
+//: https://academy.realm.io/kr/posts/try-swift-soroush-khanlou-sequence-collection/ 이 자료에서, 중간에 eachPair() 부분을 해결한 것이 바로 이것이다.
+
 //: [Next](@next)
