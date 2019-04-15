@@ -147,7 +147,7 @@ struct IntStack: Container {
         return items.removeLast()
     }
     // conformance to the Container protocol
-    typealias Item = Int
+    typealias Item = Int // <-- 위 associatedtype 의 type 을 확정.
     mutating func append(_ item: Int) {
         self.push(item)
     }

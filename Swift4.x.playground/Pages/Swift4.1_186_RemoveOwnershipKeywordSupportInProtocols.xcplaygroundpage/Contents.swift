@@ -13,7 +13,7 @@ import Foundation
 class A {}
 
 protocol P {
-    weak var weakVar: A? { get set }
+    /* weak */ var weakVar: A? { get set } // no more weak
 }
 
 class B: P {
@@ -23,4 +23,9 @@ class B: P {
 //: 컴파일러에서는 아무런 경고를 보내지 않지만 사용자 관점에서 예측하지 못하고 끔직한 결과를 이끌 수 있다. 프로토콜 입장에서는 의미 없지만 프로토콜을 채용 할 때는 영향이 있는 것 같아 보인다.
 //: swift 3,4에서는 warning 을 낼 것이다. 코드가 깨지진 않지만 제거하는것을 추천한다.
 
+#if canImport(UIKit)
+print("UIKit oK")
+#else
+print("UIKit no")
+#endif
 //: [Next](@next)

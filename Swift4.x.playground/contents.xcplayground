@@ -4,5 +4,7 @@
         <page name='Swift4.1_186_RemoveOwnershipKeywordSupportInProtocols'/>
         <page name='Swift4.1_184_UnsafePointerMissing'/>
         <page name='Swift4.1_185_EquatableHashableConformance'/>
+        <page name='Swift4.1_075_ConfigurationImportTest'/>
+        <page name='Swift4.1_187_RecursiveAssociateType'/>
     </pages>
 </playground>

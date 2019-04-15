@@ -8,10 +8,13 @@ import Foundation
 //: 아래 예제들은 이러한 문제를 보여준다.
 
 struct Person: Equatable {
+    var firstName:String
+    var lastName:String
+    var birthDate:Date
     static func == (lhs: Person, rhs: Person) -> Bool {
         return lhs.firstName == rhs.firstName &&
         lhs.lastName == rhs.lastName &&
-        lhs.birthDate == rhs.birthDate &&
+        lhs.birthDate == rhs.birthDate
         //...
     }
 }
@@ -47,7 +50,8 @@ let y = Foo.one.hashValue     // evaluates to 1
 
 //: Overriding synthesized conformances
 // 오버라이드 허용
-struct Bad<T>: Equatable { // synthesis not possible, T is not Equatable
+struct Bad<T>: Equatable {
+    // synthesis not possible, T is not Equatable
     var x: T
 }
 
